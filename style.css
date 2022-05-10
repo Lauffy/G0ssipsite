@@ -1,3 +1,32 @@
 body{
-    background-color: rgba(205, 231, 255, 0.877);
+    background-color: black;
 }
+
+header{
+    font-size: larger;
+    color: white;
+}
+
+.active {
+    text-decoration: underline 3px rgb(127, 68, 200)!important;
+
+  }
+  .navLogo {
+    width: 9vw;
+    height: 6vh;
+    margin-top: 12px;
+    margin-left: 30px;
+
+  }
+
+  .nav {
+    position: absolute;
+    z-index: 900;
+    top: 0%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 8.7%;
+    width: 100%;
+    justify-content: space-between;
+  }
