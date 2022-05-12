@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-image: radial-gradient(#000000 5%, transparent 0%),
+  radial-gradient(#ffffff 5%, transparent 0%);
+background-color: #e53935;
+background-position: 0 0, 50px 50px;
+background-size: 100px 100px;
+height: 200px;
+width: 100%;
   margin: 0;
   font-family: "Montserrat";
   font-size: larger;
   color: rgb(0, 0, 0);
-  animation:animate 10s linear infinite;
+  animation:animate 0.5s linear infinite;
 }
 
 .heroWrapper {
   display: flex !important;
+  
 }
 .heroCarousel {
   min-width: 50vw;
@@ -20,6 +27,7 @@ body {
   flex-direction: column;
   min-width: 50vw;
   color: white;
+  
 }
 .topnav {
   overflow: hidden;
@@ -57,6 +65,10 @@ body {
 }
 .leftpic{
   max-width: 50vw!important;
+  border-radius: 9px;
+  border-color: blue;
+  border-style: solid;
+  
 }
 .carousel-item{
   max-width: 45vw;
@@ -74,4 +86,5 @@ body {
   }100%{background-color: aqua;
 
   }
-}*/
+}
+*/
