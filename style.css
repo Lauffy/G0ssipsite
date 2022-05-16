@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');body {
   background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   margin: 0;
   font-family: "Montserrat";
   font-size: larger;
   color: rgb(0, 0, 0);
   animation:animate 10s linear infinite;
-
 }
-
 .heroWrapper {
   display: flex !important;
+  
 }
 .heroCarousel {
   min-width: 50vw;
@@ -20,6 +20,7 @@
   flex-direction: column;
   min-width: 50vw;
   color: white;
+  
 }
 .nav {
   position: absolute;
@@ -46,6 +47,10 @@
 }
 .leftpic{
   max-width: 50vw!important;
+  border-radius: 9px;
+  border-color: blue;
+  border-style: solid;
+  
 }
 .carousel-item{
   max-width: 45vw;
@@ -109,4 +114,5 @@
   }100%{background-color: aqua;
 
   }
-}*/
+}
+*/
