@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');body {
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');/*body {
   background-color: rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   margin: 0;
@@ -7,9 +7,11 @@
   font-size: larger;
   color: rgb(0, 0, 0);
   animation:animate 10s linear infinite;
-}
+}*/
+
 .heroWrapper {
   display: flex !important;
+  margin-top: 9rem;
   
 }
 .heroCarousel {
@@ -30,7 +32,7 @@
   background-color: #3333337d;
   display: flex;
   flex-direction: row;
-  height: 8.7%;
+  height: 10.5%;
   width: 100%;
   justify-content: space-between;
 }
@@ -48,8 +50,7 @@
 .leftpic{
   max-width: 50vw!important;
   border-radius: 9px;
-  border-color: blue;
-  border-style: solid;
+
   
 }
 .carousel-item{
@@ -69,7 +70,7 @@
     
   }
   .links {
-    margin-top: 10px;
+    margin-top: 1.9rem;
     font-size: 1.3rem;
     font-family: 'Montserrat';
     margin-left: 20px;
@@ -105,6 +106,81 @@
     background-color: black;
     padding-top: 80px;
   }
+  #bubbles { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+}
+.bubble2 {
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.x1 {
+    transform: scale(0.9);
+    opacity: 0.2;
+    animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 50vw;
+    transform: scale(0.6);
+    opacity: 0.5;
+    animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 10vw;
+    transform: scale(0.8);
+    opacity: 0.3;
+    animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 80vw;
+    transform: scale(0.75);
+    opacity: 0.35;
+    animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.x5 {
+    left: 40vw;
+    transform: scale(0.8);
+    opacity: 0.3; 
+    animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+  left: 20vw;
+  transform: scale(0.5);
+  opacity: 0.3; 
+  animation: moveclouds 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+}
+@keyframes moveclouds { 
+    0% { 
+        bottom: -50px;
+    }
+    100% { 
+        bottom: calc(100vh + 150px);
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
 
 /*@keyframes animate{
   0%{background-color: aqua;
