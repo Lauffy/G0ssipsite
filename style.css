@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   font-family: "Montserrat";
   font-size: larger;
   color: rgb(0, 0, 0);
   animation:animate 10s linear infinite;
+
 }
 
 .heroWrapper {
@@ -21,28 +21,17 @@ body {
   min-width: 50vw;
   color: white;
 }
-.topnav {
-  overflow: hidden;
-  background-color: rgba(255, 59, 59, 0.445);
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 1em 7.5em;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: rgba(255, 255, 255, 0.438);
-  color: rgb(0, 0, 0);
-}
-
-.topnav a.active {
-  background-color: #aa0404;
-  color: white;
+.nav {
+  position: absolute;
+  z-index: 900;
+  
+  top: 0%;
+  background-color: #3333337d;
+  display: flex;
+  flex-direction: row;
+  height: 8.7%;
+  width: 100%;
+  justify-content: space-between;
 }
 .img {
   width: 30%;
@@ -66,6 +55,52 @@ body {
 .carousel-text{
   padding-top: 10vh;
 }
+.bottom-left{
+  
+    position: absolute;
+    padding-left: 70px;
+    font-size: 70px;
+    font-family: 'Satisfy';
+    
+  }
+  .links {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    margin-left: 20px;
+
+
+  }
+
+  .links>a {
+    text-decoration: underline 1px transparent;
+    color: rgb(255, 255, 255);
+    margin-right: 100px;
+
+    padding-top: 10px;
+    text-underline-offset: 3px;
+  }
+
+  .links>a:hover {
+    text-decoration: underline 3px rgb(130, 24, 24);
+    
+    padding-top: 10px;
+    transition:0.5s;
+  }
+
+  .active {
+    text-decoration: underline 3px rgb(130, 24, 24)!important;
+
+  }
+  body{
+    background-color: rgb(0, 0, 0);
+    padding-top: 50px;
+  }
+  .body2{
+    background-color: black;
+    padding-top: 80px;
+  }
+
 /*@keyframes animate{
   0%{background-color: aqua;
     
