@@ -122,6 +122,18 @@ i{
   body{
     background-color: rgb(0, 0, 0);
     padding-top: 50px;
+    font-family: 'Montserrat';
+  }
+
+  .body{
+    max-width: 1200px;
+    background-color: rgb(110, 26, 26);
+    border-color: rgb(180, 180, 180);
+    border-width: 2px;
+    border-style: groove;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 3px;
   }
   .body2{
     background-color: black;
@@ -213,6 +225,32 @@ i{
         margin-left:50px;
     }
 }
+
+.footer-c{
+  position:fixed;
+  bottom: 0;
+
+}
+
+.imgs{
+  height: 400px;
+  width: 250px;
+
+}
+
+.floatl{
+  float: left;
+}
+
+.floatr{
+  float: right;
+}
+
+.cimgs{
+  height:400px;
+  width:400px;
+}
+
 
 /*@keyframes animate{
   0%{background-color: aqua;
