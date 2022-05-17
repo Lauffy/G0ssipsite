@@ -37,7 +37,7 @@
   justify-content: space-between;
 }
 .img {
-  width: 30%;
+  width: auto;
 }
 .footer {
   position: absolute;
@@ -53,6 +53,15 @@
 
   
 }
+.socials> a:hover{
+  transition: 0.5s;
+  transform: scale(1.3)
+}
+i{
+  color:white;
+  text-decoration:none;
+}
+
 .carousel-item{
   max-width: 45vw;
   padding-left: 5vw;
@@ -61,6 +70,18 @@
 .carousel-text{
   padding-top: 10vh;
 }
+.hover12 figure {
+	background: #1abc9c;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
+
 .bottom-left{
   
     position: absolute;
@@ -106,6 +127,17 @@
     background-color: black;
     padding-top: 80px;
   }
+  .socials> a:hover{
+    transition: 0.5s;
+    transform: scale(1.3)
+  }
+  i{
+   
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+  }
+
+
   #bubbles { 
     position: absolute;
     top: 0;
