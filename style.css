@@ -11,7 +11,7 @@
 
 .heroWrapper {
   display: flex !important;
-  margin-top: 9rem;
+  margin-top: 4rem;
   
 }
 .heroCarousel {
@@ -85,7 +85,7 @@ i{
 .bottom-left{
   
     position: absolute;
-    padding-left: 70px;
+    padding-left: 10px;
     font-size: 70px;
     font-family: 'Satisfy';
     
@@ -120,20 +120,20 @@ i{
 
   }
   body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(110, 11, 11);
     padding-top: 50px;
     font-family: 'Montserrat';
   }
 
   .body{
-    max-width: 1200px;
-    background-color: rgb(110, 26, 26);
-    border-color: rgb(180, 180, 180);
-    border-width: 2px;
+    max-width: 1400px;
+    background-color: rgb(179, 174, 174);
+    border-color: rgb(0, 0, 0);
+    border-width: 0px;
     border-style: groove;
     margin: 0 auto;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   .body2{
     background-color: black;
@@ -251,6 +251,24 @@ i{
   width:400px;
 }
 
+.footer2{
+    left: 0px;
+    bottom: 0px;
+    background-color: #d6b589;
+
+}
+
+.footer2 li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 12px 50px;
+    text-decoration: underline;
+}
+
+.footer2 ul{
+    list-style-type: none;
+}
 
 /*@keyframes animate{
   0%{background-color: aqua;
