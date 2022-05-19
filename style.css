@@ -270,7 +270,11 @@ i{
 .footer2 ul{
     list-style-type: none;
 }
-
+.carousel{
+  text-align: center;
+  justify-content: center;
+  flex-direction:column;
+}
 /*@keyframes animate{
   0%{background-color: aqua;
     
