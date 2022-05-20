@@ -9,6 +9,31 @@
   animation:animate 10s linear infinite;
 }*/
 
+.slideanim {
+  visibility:hidden;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 1s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
+
 .heroWrapper {
   display: flex !important;
   margin-top: 4rem;
@@ -128,7 +153,7 @@ i{
 
   .body{
     max-width: 1400px;
-    background-color: rgb(87, 87, 87);
+    background-color: #a7a6a6;
     border-color: rgb(0, 0, 0);
     border-width: 0px;
     border-style: groove;
@@ -253,10 +278,7 @@ i{
 }
 
 .footer2{
-    left: 0px;
-    bottom: 0px;
-    background-color: #d6b589;
-
+    background-color: #a7a6a6;
 }
 
 .footer2 li a {
@@ -269,6 +291,19 @@ i{
 
 .footer2 ul{
     list-style-type: none;
+}
+
+footer > div{
+
+  border-color: rgb(255, 255, 255);
+  border-width: thin;
+  border-style: solid;
+  border: 1 px;
+  width: 1000px;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 5px;
+
 }
 
 /*@keyframes animate{
