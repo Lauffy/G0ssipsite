@@ -15,9 +15,6 @@
     <link rel="icon" type="image/x-icon" href="Ticon.svg">
     <link rel = "stylesheet" href = "style.css">
     <style>
-      h2{
-        color:ghostwhite;
-      }
     </style>
   </head>
   <body>
@@ -32,30 +29,72 @@
       </div>
     </div>
 
-    <br><br><br><br>
-      <h1> Group Members</h1><br>
-      <h2>Tamoya Oakley</h2>
-      <img class="cimgs" src="Tamoya.jpeg"><br><br>
-      <h2 >toakley@brooklynsteamcenter.org <br> ###-###-####</h2>
-      <h2 >Rhanley Laferiere</h2>
-      <img class="cimgs" src="rhanley.jpeg"><br><br>
-      <h2 >rlaferiere@brooklynsteamcenter.org <br> ###-###-####</h2>
-      <h2>Zion Williams</h2>
-      <img class="cimgs" src="zion.jpeg"><br><br>
-      <h2 >zwilliams@brooklynsteamcenter.org <br> ###-###-####</h2>
+    <br><br><br><br><br>
+    <h1 style = "text-align: center; text-decoration: black underline;"> <i>Group Members</i></h1><br>
+    <div class = "row">
+      <div class = "col-sm-4 contact">
+        <h2>Tamoya Oakley</h2>
+        <img  src="Tamoya.jpeg" height = "200" width = "200"><br><br>
+        <h2 >toakley@brooklynsteamcenter.org <br> ###-###-####</h2>
+      </div>
+      <div class = "col-sm-4 contact">
+        <h2 >Rhanley Laferiere</h2>
+        <img src="rhanley.jpeg" height = "200" width = "200"><br><br>
+        <h2 >rlaferiere@brooklynsteamcenter.org <br> ###-###-####</h2>
+      </div>
+      <div class = "col-sm-4 contact">
+        <h2>Zion Williams</h2>
+        <img src="zion.jpeg" height = "200" width = "200"><br><br>
+        <h2 >zwilliams@brooklynsteamcenter.org <br> ###-###-####</h2>
+      </div>
+    </div>
+
+    <br>
+    <p> If you have any juicy gossip to share, reach out to us using this form! </p> 
+    <form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+        method="post" style="padding-left:25px ;">
+            <label>Email:</label><br>
+            <input name="email" ><br>
+            <label >Name:</label><br>
+            <input  name="name" ><br><br>
+            <label >Share some feedback</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50">
+                </textarea><br>
+            <input type="submit" value="Submit">
+            <input name="send-to" value="toakley@brooklynsteamcenter.org" hidden>
+            
+          </form> 
 
       <br>
       
-      <footer class = "footer2">
-        <div>
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a class="active" href="Experiment.html">Experiment</a></li>
-            <li><a class="active" href="Simulator.html">Simulator</a></li>
-            <li><a class="active" href="Media.html">Media</a></li>
-            <li><a class="active" href="Contact.html">Contact</a></li>
-          </ul>
+      
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class = "footer">
+          © 2020 Copyright:
+        <a class="text-white" href="https://www.brooklynsteamcenter.org/">SteamCenter.com</a>
+        <div class="socials">
+          <div class="fa-stack fa-lg">
+            <a href="https://twitter.com/bksteamcenter">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i></a>
+          </div>
+        
+        <div class="fa-stack fa-lg">
+          <a href="https://www.youtube.com/channel/UCItYaxqisK4-1GHwwArr2-g">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-youtube fa-stack-1x"></i><a/>
         </div>
-      </footer>
+        </div>
+
+        <div class="links">
+          <a class="active" href="index.html">Home</a>
+          <a href="Experiment.html">Experiment</a>
+          <a href="Simulator.html">Simulator</a>
+          <a href="Media.html">Media</a>
+          <a href="Contact.html">Contact</a>
+       </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
