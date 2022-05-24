@@ -171,7 +171,7 @@ text-decoration: underline 3px rgb(130, 24, 24)!important;
   border-style:solid;
   padding: 25px;
   border-radius: 2px;
-  float: left;
+  /*float: left;*/
   color:#000000;
   font-size:x-large;
   text-align: center;
@@ -183,10 +183,26 @@ text-decoration: underline 3px rgb(130, 24, 24)!important;
   border-color: rgb(255, 255, 255);
   border-width: 1px;
   border-style: dashed;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 5px;
   border-radius: 2px;
-  float: right;
+  /*float: right;*/
+}
+
+.pbody{
+  max-width: 1400px;
+  background-color:gainsboro;
+  border-color: rgb(0, 0, 0);
+  border-width: 3px;
+  border-style:solid;
+  padding: 25px;
+  border-radius: 2px;
+  /*float: left;*/
+  color:#000000;
+  font-size:x-large;
+  text-align: center;
+  margin: 0 auto;
+  
 }
 
 #bubbles { 
