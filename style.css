@@ -113,6 +113,7 @@ text-decoration: underline 3px rgb(130, 24, 24)!important;
   width:auto;
   /*display: inline-block; (problem)*/
   overflow: hidden;
+  margin-top: 2em;
 }
 
 .image-container img {
