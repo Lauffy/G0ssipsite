@@ -205,7 +205,20 @@ text-decoration: underline 3px rgb(130, 24, 24)!important;
   margin: 0 auto;
   
 }
-
+.path{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 7s linear forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes dash{
+  50% {
+    stroke-dashoffset:0;
+  }
+  100% {
+    stroke-dashoffset:-1000;
+  }
+}
 #bubbles { 
   position: absolute;
   top: 0;
